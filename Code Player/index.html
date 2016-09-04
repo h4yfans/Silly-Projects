@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://cdn.jsdelivr.net/jquery/3.1.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <title>Code Player</title>
+</head>
+
+<body>
+
+<div class="options" id="menuBar">
+    <div class="logo">
+        CodePlayer
+    </div>
+    <div class="buttonDiv">
+        <button class="runButton">Run</button>
+    </div>
+    <ul>
+        <li class="toggle selected">HTML</li>
+        <li class="toggle">CSS</li>
+        <li class="toggle">JS</li>
+        <li class="toggle selected" style="border-right: none">RESULT</li>
+    </ul>
+</div>
+<div class="clear"></div>
+
+<div class="codeContainer" id="HTMLContainer">
+    <div class="sub-title">HTML</div>
+    <textarea class="code" id="html"><div id="test"></div></textarea>
+</div>
+
+<div class="codeContainer" id="CSSContainer">
+    <div class="sub-title">CSS</div>
+    <textarea class="code" id="css">html {background-color:blue}</textarea>
+</div>
+
+<div class="codeContainer" id="JSContainer">
+    <div class="sub-title">JS</div>
+    <textarea class="code" id="js">document.getElementById("test").innerHTML = "It's working!";</textarea>
+</div>
+
+<div class="codeContainer" id="RESULTContainer">
+    <div class="sub-title">RESULT</div>
+    <iframe id="resultFrame"></iframe>
+</div>
+
+</body>
+
+</html>
